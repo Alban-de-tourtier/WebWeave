@@ -1,0 +1,13 @@
+services:
+  server:
+    build: api/
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./api:/app
+  client_web:
+    build: web/
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web:/app
