@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import usersRouter from './routes/about';
+import aboutRouter from './routes/about';
+import homeRouter from './routes/home';
 
 const app = express();
 
@@ -8,7 +9,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
 // API routes
-app.use('/api/about', usersRouter);
+app.use('/api/home', homeRouter);
+app.use('/api/about', aboutRouter);
 
 const PORT = process.env.PORT || 3001;
 

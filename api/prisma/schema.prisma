@@ -9,6 +9,21 @@ datasource db {
 
 model about {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
-  title   String
   content String
+  title   String
+}
+
+model contact {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model experiences {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model home {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  content String
+  title   String
+  type    String
 }
