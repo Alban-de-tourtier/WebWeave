@@ -1,0 +1,81 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    background-color: #FFFCF9;
+}
+
+.MainTitle {
+    font-size: 44px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.Line1 {
+    width: 10%;
+    margin: 0 auto;
+    margin-left: 0;
+    border-top: 2px solid #49A078;
+    margin: 0 0 4rem 0;
+}
+
+.MainContainer {
+    display: flex;
+    width: 100dvw;
+    padding: 0rem 10rem 0rem 10rem;
+    justify-content: center;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: #FEFFFE;
+    box-shadow: 0px 0px 45px 0px #F0EBEB;
+    border-radius: 6px;
+}
+
+.SubTitle {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2.1rem;
+    width: 10rem;
+    margin: 0 0 1rem 0;
+}
+
+.TextContent {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    width: 16rem;
+    margin: 0rem 0 1rem 0;
+    color: #4D4D4D;
+}
+
+.ProgressWrapper {
+    border-radius: 14px;
+    overflow: hidden;
+    height: auto;
+    background-color: #EEEEEE;
+}
+
+.ProgressBar {
+    width: 70%;
+    background-color: #49A078;
+    height: 10px;
+}
+
+@media (max-width: 500px) {
+    .MainContainer {
+        flex-direction: column;
+    }
+}
