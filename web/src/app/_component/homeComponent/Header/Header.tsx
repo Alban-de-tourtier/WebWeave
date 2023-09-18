@@ -23,7 +23,7 @@ const Header = () => {
                     </a>
                 </div>
             ))}
-            <Image src="/me.png" alt="ME" className={styles.Image} width={500} height={500}/>
+            <Image src="/home/me.png" alt="ME" className={styles.Image} width={500} height={500}/>
         </div>
     )
 }
