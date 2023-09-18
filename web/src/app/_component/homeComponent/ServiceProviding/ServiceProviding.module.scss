@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-    background-color: #FEFFFE;
+    background-color: #FFFCF9;
 }
 
 .MainTitle {
@@ -25,24 +25,21 @@
     display: flex;
     width: 100dvw;
     padding: 0rem 10rem 0rem 10rem;
+    justify-content: center;
 }
 
 .Content {
     display: flex;
     flex-direction: column;
+    padding: 3rem;
 }
 
 .SubTitle {
     font-size: 26px;
     font-weight: 500;
     line-height: 2.1rem;
-    width: 18rem;
-}
-
-.Line2 {
-    @extend .Line1;
-    width: 7%;
-    margin: 1rem 0 2rem 0;
+    width: 20rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .TextContent {
@@ -55,13 +52,9 @@
     outline: 0;
     padding: 0;
     vertical-align: baseline;
-    width: 35rem;
-    margin: 0rem 0 5rem 0;
+    width: 19rem;
+    margin: 0rem 0 1rem 0;
     color: #4D4D4D
-}
-
-.Image {
-    margin-left: 10rem;
 }
 
 @media (max-width: 500px) {
