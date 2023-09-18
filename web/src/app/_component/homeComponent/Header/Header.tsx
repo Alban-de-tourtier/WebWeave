@@ -12,18 +12,18 @@ const Header = () => {
         <div className={styles.MainContainer}>
             {data.map((item, key) => (
                 <div key={key} className={styles.Content}>
-                    <h1 className={styles.MainTitle}>{item.title}</h1>
+                    <h4 className={styles.MainTitle}>{item.title}</h4>
                     <span className={styles.TextContent}>{item.content}</span>
-                    <button
-                        type="button"
-                        className="inline-flex justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 sm:w-auto"
+                    <a
+                        href="/about"
+                        className="inline-flex justify-center rounded-md bg-blue-600 px-3 py-3 text-sm text-white shadow-sm hover:bg-blue-500 sm:w-auto"
                         style={{ width: '13rem' }}
                     >
-                    Learn more about me
-                  </button>
+                        Learn more about me
+                    </a>
                 </div>
             ))}
-            <Image src="/me.png" alt="ME" width={500} height={500}/>
+            <Image src="/me.png" alt="ME" className={styles.Image} width={500} height={500}/>
         </div>
     )
 }
