@@ -1,0 +1,35 @@
+.MainTitle {
+    font-size: 5rem;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainContainer {
+    display: flex;
+    background-color: #F4F8FD;
+    width: 100dvw;
+    padding: 10rem 10rem 0rem 10rem;
+}
+
+.TextContent {
+    border: 0;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    width: 35rem;
+    margin: 5rem 0 5rem 0;
+}
+
+@media (max-width: 500px) {
+    .MainContainer {
+        flex-direction: column;
+    }
+}
