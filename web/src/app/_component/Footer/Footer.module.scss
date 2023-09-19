@@ -1,0 +1,41 @@
+.Container {
+    width: 100dvw;
+    background-color: #202021;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LogoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.FirstSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyLogo {
+    margin: 0 23rem 0 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mail {
+    border: 0;
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-style: inherit;
+    font-weight: inherit;
+    color: #FFFFFF;
+}
+
+.MadeText {
+    @extend .Mail;
+    font-size: 1rem;
+    margin: 4rem 0 0rem 0;
+}
