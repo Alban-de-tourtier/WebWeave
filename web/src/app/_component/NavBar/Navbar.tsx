@@ -34,7 +34,7 @@ const NavBar = () => {
             About
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Portfolio
+            Experiences
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Contact

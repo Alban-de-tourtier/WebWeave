@@ -1,6 +1,7 @@
 'use client'
 import AboutMe from '@/app/_component/homeComponent/AboutMe/AboutMe';
 import Header from '@/app/_component/homeComponent/Header/Header';
+import Projects from '@/app/_component/homeComponent/Projects/Projects';
 import ServiceProviding from '@/app/_component/homeComponent/ServiceProviding/ServiceProviding';
 import WorkExperiences from '@/app/_component/homeComponent/WorkExperiences/WorkExperiences';
 
@@ -12,6 +13,7 @@ const AdminPanel = () => {
                 <AboutMe />
                 <ServiceProviding />
                 <WorkExperiences />
+                <Projects />
             </div>
         </main>
     )
