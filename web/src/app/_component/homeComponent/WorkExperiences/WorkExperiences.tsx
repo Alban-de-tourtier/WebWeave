@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react"
 import styles from "./WorkExperiences.module.scss"
 import { getHomeDataType } from "@/services/HomeCall"
-import Image from "next/image"
 
-const ServiceProviding = () => {
+const WorkExperiences = () => {
     const [data, setData] = useState<HomeDataType[]>([])
     useEffect(() => {
       getHomeDataType("work-experience").then(res => setData(res))
@@ -27,4 +26,4 @@ const ServiceProviding = () => {
     )
 }
 
-export default ServiceProviding;
+export default WorkExperiences;
