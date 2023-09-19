@@ -8,7 +8,7 @@
 }
 
 .MainTitle {
-    font-size: 44px;
+    font-size: 2.75rem;
     font-weight: 400;
     color: #212121;
 }
@@ -17,7 +17,7 @@
     width: 10%;
     margin: 0 auto;
     margin-left: 0;
-    border-top: 2px solid #49A078;
+    border-top: 0.125rem solid #49A078;
     margin: 1rem 0 4rem 0;
 }
 
@@ -34,12 +34,12 @@
     width: auto;
     height: auto;
     position: relative;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #000000;
 }
 
 .Image {
-    border-radius: 10px;
+    border-radius: 0.625rem;
     max-width: none;
     transition: opacity 0.3s ease;
 }
@@ -66,12 +66,12 @@
 .Title {
     color: #FCFAFB;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .ContentText {
     color: #dfdfdf;
-    font-size: 15px;
+    font-size: 0.9375rem;
     text-align: center;
 }
 
