@@ -8,7 +8,7 @@ import linkedin from "@/images/about/LinkedInLogoBlack.svg"
 import Link from "next/link"
 
 const Header = () => {
-    const [data, setData] = useState<HomeDataType[]>([])
+    const [data, setData] = useState<AboutDataType[]>([])
     useEffect(() => {
       getAboutDataType("header").then(res => setData(res))
     }, [])
