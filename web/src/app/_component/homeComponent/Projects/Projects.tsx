@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react"
 import styles from "./Projects.module.scss"
 import Image from "next/image"
 import Link from "next/link"
+import area from "@/images/home/Area.jpeg"
+import portfolio from "@/images/home/portfolio.jpeg"
+import trade from "@/images/home/Trade.webp"
+
 
 const Projects = () => {
     return (
@@ -11,7 +14,7 @@ const Projects = () => {
             <div className={styles.MainContainer}>
                 <div className={styles.Content}>
                     <Link href="/">
-                        <Image src="/home/portfolio.jpeg" alt="Portfolio" className={styles.Image} width={450} height={450}/>
+                        <Image src={portfolio} alt="Portfolio" className={styles.Image}/>
                         <div className={styles.ContentTextContainer}>
                             <h4 className={styles.Title}>Portfolio</h4>
                             <h4 className={styles.ContentText}>Find out how I created this portfolio...</h4>
@@ -20,7 +23,7 @@ const Projects = () => {
                 </div>
                 <div className={styles.Content}>
                     <Link href="/">
-                        <Image src="/home/Area.jpeg" alt="Area" className={styles.Image} width={450} height={450}/>
+                        <Image src={area} alt="Area" className={styles.Image}/>
                         <div className={styles.ContentTextContainer}>
                             <h4 className={styles.Title}>Area</h4>
                             <h4 className={styles.ContentText}>Web/Mobile application able to connect API to create CRM...</h4>
@@ -29,7 +32,7 @@ const Projects = () => {
                 </div>
                 <div className={styles.Content}>
                     <Link href="/">
-                        <Image src="/home/Trade.webp" alt="Trade" className={styles.Image} width={450} height={450} />
+                        <Image src={trade} alt="Trade" className={styles.Image} />
                         <div className={styles.ContentTextContainer}>
                             <h4 className={styles.Title}>Trade</h4>
                             <h4 className={styles.ContentText}>Create an algorithm able to long and short a market...</h4>

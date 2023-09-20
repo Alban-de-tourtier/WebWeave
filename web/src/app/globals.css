@@ -28,3 +28,11 @@ body {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px; /* Adjust font size for smaller screens */
+  }
+
+  /* Other responsive styles */
+}

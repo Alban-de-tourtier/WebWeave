@@ -6,7 +6,7 @@ import homeRouter from './routes/home';
 const app = express();
 const cors = require('cors'); // Import the cors middleware
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: `${process.env.WEBURL}:3000`,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 

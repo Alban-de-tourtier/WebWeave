@@ -1,5 +1,5 @@
 .Container {
-    width: 100dvw;
+    width: 100%;
     background-color: #202021;
     padding: 3rem;
     display: flex;
@@ -23,6 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 4.375rem;
+    height: auto;
 }
 
 .Mail {
@@ -38,4 +40,18 @@
     @extend .Mail;
     font-size: 1rem;
     margin: 4rem 0 0rem 0;
+}
+
+.Image {
+    width: 2.5rem;
+    height: auto;
+}
+
+@media (max-width: 1300px) {
+    .FirstSection {
+        flex-direction: column;
+    }
+    .MyLogo {
+        margin: 3rem 0 3rem 0;
+    }
 }

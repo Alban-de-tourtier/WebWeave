@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import styles from "./AboutMe.module.scss"
 import { getHomeDataType } from "@/services/HomeCall"
 import Image from "next/image"
+import aboutMe from "@/images/home/AboutMe.svg"
 
 const AboutMe = () => {
     const [data, setData] = useState<HomeDataType[]>([])
@@ -27,7 +28,7 @@ const AboutMe = () => {
                         </a>
                     </div>
                 ))}
-                <Image src="/home/AboutMe.svg" alt="AboutMe" className={styles.Image} width={500} height={500}/>
+                <Image src={aboutMe} alt="AboutMe" className={styles.Image} />
             </div>
         </div>
     )

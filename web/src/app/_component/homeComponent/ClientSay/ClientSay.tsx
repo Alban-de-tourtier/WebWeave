@@ -2,6 +2,22 @@ import { useEffect, useState } from "react"
 import styles from "./ClientSay.module.scss"
 import { getHomeDataType } from "@/services/HomeCall"
 import Image from "next/image"
+import micka from "@/images/home/MickaelRiess.png"
+import paul from "@/images/home/PaulBoutin.png"
+import renan from "@/images/home/RenanDubois.png"
+import quote from "@/images/home/Quote.png"
+
+function getImageContent(text: string) {
+    if (text === 'Mickael Riess') {
+      return <Image src={micka} className={styles.Image} alt="Micka"/>;
+    } else if (text === 'Paul Boutin') {
+      return <Image src={paul} className={styles.Image} alt="Paul"/>;
+    } else if (text === 'Renan Dubois') {
+      return <Image src={renan} className={styles.Image} alt="Renan"/>;
+    } else {
+      return <Image src={micka} className={styles.Image} alt="Micka"/>;
+    }
+}
 
 const ClientSay = () => {
     const [data, setData] = useState<HomeDataType[]>([])
@@ -15,8 +31,8 @@ const ClientSay = () => {
             <div className={styles.MainContainer}>
                 {data.map((item, key) => (
                     <div key={key} className={styles.Content}>
-                        <Image src="/home/Quote.png" alt="Quote" width={30} height={30}/>
-                        <Image src={`/home/${item.title}.png`} className={styles.Image} alt="Quote" width={70} height={70}/>
+                        <Image src={quote} alt="Quote" className={styles.Quote} />
+                        {getImageContent(item.title)}
                         <span className={styles.TextContent}>{item.content}</span>
                         <span className={styles.Line2}></span>
                         <p className={styles.Name}>{item.title}</p>
