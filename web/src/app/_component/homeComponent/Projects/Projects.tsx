@@ -2,7 +2,7 @@ import styles from "./Projects.module.scss"
 import Image from "next/image"
 import Link from "next/link"
 import area from "@/images/home/Area.jpeg"
-import portfolio from "@/images/home/portfolio.jpeg"
+import portfolio from "@/images/home/Portfolio.jpeg"
 import trade from "@/images/home/Trade.webp"
 
 

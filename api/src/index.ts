@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import aboutRouter from './routes/about';
 import homeRouter from './routes/home';
+import experiencesRouter from './routes/experiences';
 
 const app = express();
 const cors = require('cors'); // Import the cors middleware
@@ -19,6 +20,7 @@ app.use(cors(corsOptions)); // Use the cors middleware with your options
 // API routes
 app.use('/api/home', homeRouter);
 app.use('/api/about', aboutRouter);
+app.use('/api/experiences', experiencesRouter);
 
 const PORT = process.env.PORT || 3001;
 
