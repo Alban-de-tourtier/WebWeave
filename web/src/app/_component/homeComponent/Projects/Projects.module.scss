@@ -23,8 +23,7 @@
 
 .MainContainer {
     display: flex;
-    width: 100dvw;
-    padding: 0rem 10rem 0rem 10rem;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
@@ -42,6 +41,8 @@
     border-radius: 0.625rem;
     max-width: none;
     transition: opacity 0.3s ease;
+    width: 28.125rem;
+    height: auto;
 }
 
 .Content:hover .Image {
@@ -75,7 +76,7 @@
     text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
     .MainContainer {
         flex-direction: column;
     }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import styles from "./Header.module.scss"
 import { getHomeDataType } from "@/services/HomeCall"
 import Image from "next/image"
+import me from "@/images/home/me.png"
 
 const Header = () => {
     const [data, setData] = useState<HomeDataType[]>([])
@@ -23,7 +24,7 @@ const Header = () => {
                     </a>
                 </div>
             ))}
-            <Image src="/home/me.png" alt="ME" className={styles.Image} width={500} height={500}/>
+            <Image src={me} alt="ME" className={styles.Image}/>
         </div>
     )
 }

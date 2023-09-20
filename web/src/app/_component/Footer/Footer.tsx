@@ -1,6 +1,9 @@
 import Link from "next/link";
 import styles from "./Footer.module.scss"
 import Image from "next/image"
+import linkedin from "@/images/LinkedIn.svg"
+import github from "@/images/GitHub.svg"
+import mylogo from "@/images/WebWeaveWhite.png"
 
 const Footer = () => {
     return (
@@ -8,13 +11,13 @@ const Footer = () => {
             <div className={styles.FirstSection}>
                 <div className={styles.LogoContainer}>
                     <Link href="https://linkedin.com/in/alban-de-tourtier-1449691b6" >
-                        <Image src="/LinkedIn.svg" alt="Logo Linkedin" width={40} height={40} style={{marginRight: "1rem"}} />
+                        <Image src={linkedin} alt="Logo LinkedIn" className={styles.Image} style={{marginRight: "1rem"}} />
                     </Link>
                     <Link href="https://github.com/Alban-de-tourtier" >
-                        <Image src="/GitHub.svg" alt="Logo GitHub" width={40} height={40} />
+                        <Image src={github} alt="Logo GitHub" className={styles.Image} />
                     </Link>
                 </div>
-                <Image src="/WebWeaveWhite.png" alt="Logo white" className={styles.MyLogo} width={70} height={70}/>
+                <Image src={mylogo} alt="Logo white" className={styles.MyLogo} />
                 <h4 className={styles.Mail}>albandetourtier@gmail.com</h4>
             </div>
             <h4 className={styles.MadeText}>Made by Alban de Tourtier</h4>

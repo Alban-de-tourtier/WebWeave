@@ -11,12 +11,16 @@
 .MainContainer {
     display: flex;
     background-color: #F4F8FD;
-    width: 100dvw;
+    width: 100%;
     padding: 10rem 10rem 0rem 10rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .Image {
     margin-left: 10rem;
+    width: 31.25rem;
+    height: auto;
 }
 
 .TextContent {
@@ -34,8 +38,12 @@
     color: #4D4D4D
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
     .MainContainer {
         flex-direction: column;
+        padding: 10rem 0 0 0;
+    }
+    .Image {
+        margin: 0;
     }
 }
