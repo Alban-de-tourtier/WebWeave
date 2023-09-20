@@ -1,0 +1,93 @@
+.MainContainer {
+    display: flex;
+    background-color: #FCFAFB;
+    width: 100vw;
+    padding: 8rem 0 4rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainTitle {
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: #212121;
+}
+
+.Line1 {
+    width: 10%;
+    margin: 0 auto;
+    margin-left: 0;
+    border-top: 0.125rem solid #49A078;
+    margin: 1rem 0 2rem 0;
+}
+
+.Image {
+    box-shadow: 0rem 0rem 2.8125rem 0rem #676767;
+    border-radius: 1rem;
+}
+
+.SubTitle {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+}
+
+.TextContent {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    vertical-align: baseline;
+    width: 35rem;
+    margin: 0rem 0 5rem 0;
+    color: #4D4D4D
+}
+
+.Content2 {
+    @extend .Content;
+    margin: 0 10rem 0 0;
+}
+
+.ProjectContainer1 {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+}
+
+.ProjectContainer2 {
+    @extend .ProjectContainer1;
+    background-color: #FFFCF9;
+}
+
+@media (max-width: 1300px) {
+    .Content {
+        margin: 0rem;
+    }
+
+    .Image {
+        margin: 0 0 3rem 0;
+        width: 24rem;
+    }
+
+    .ProjectContainer1 {
+        flex-direction: column-reverse;
+    }
+    .ProjectContainer2 {
+        flex-direction: column;
+    }
+}

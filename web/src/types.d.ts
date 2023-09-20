@@ -9,3 +9,11 @@ declare interface AboutDataType {
     type: string;
     content: string;
 }
+
+declare interface ExperiencesDataType {
+    title: string;
+    type: string;
+    content: string;
+    image: string;
+    position: number;
+}

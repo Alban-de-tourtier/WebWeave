@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { getAboutDataType } from "@/services/AboutCall"
 
 const Services = () => {
-    const [data, setData] = useState<HomeDataType[]>([])
+    const [data, setData] = useState<AboutDataType[]>([])
     useEffect(() => {
       getAboutDataType("services").then(res => setData(res))
     }, [])
