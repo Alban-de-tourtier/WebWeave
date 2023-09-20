@@ -87,3 +87,19 @@
     margin: 0.2rem 0rem 0.2rem 1.5rem;
     font-size: 0.75rem;
 }
+
+@media (max-width: 1300px) {
+    .SubContainer {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .Content {
+        margin: 0;
+    }
+
+    .SkillContainer {
+        width: 70%;
+        margin: 3rem 0 0 0;
+    }
+}
