@@ -13,7 +13,7 @@ const Projects = () => {
             <span className={styles.Line1}></span>
             <div className={styles.MainContainer}>
                 <div className={styles.Content}>
-                    <Link href="/">
+                    <Link href="/experiences">
                         <Image src={portfolio} alt="Portfolio" className={styles.Image}/>
                         <div className={styles.ContentTextContainer}>
                             <h4 className={styles.Title}>Portfolio</h4>
@@ -22,7 +22,7 @@ const Projects = () => {
                     </Link>
                 </div>
                 <div className={styles.Content}>
-                    <Link href="/">
+                    <Link href="/experiences">
                         <Image src={area} alt="Area" className={styles.Image}/>
                         <div className={styles.ContentTextContainer}>
                             <h4 className={styles.Title}>Area</h4>
@@ -31,7 +31,7 @@ const Projects = () => {
                     </Link>
                 </div>
                 <div className={styles.Content}>
-                    <Link href="/">
+                    <Link href="/experiences">
                         <Image src={trade} alt="Trade" className={styles.Image} />
                         <div className={styles.ContentTextContainer}>
                             <h4 className={styles.Title}>Trade</h4>

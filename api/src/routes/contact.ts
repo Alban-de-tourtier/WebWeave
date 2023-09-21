@@ -31,7 +31,7 @@ router.delete(`/:id`, async (req: Request, res: Response) => {
 
 //POST specific contact content
 router.post(`/`, async (req: Request, res: Response) => {
-  const { title, content, type, image, position } = req.body;
+  const { title, content, type, image, position, link } = req.body;
 
   if (!title || !content || !type || !image || !position) {
       return res.status(400).json({ error: 'Title, content and type are required.' });
@@ -44,7 +44,8 @@ router.post(`/`, async (req: Request, res: Response) => {
               content,
               type,
               image,
-              position
+              position,
+              link
           },
       });
       res.json(result);
