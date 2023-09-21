@@ -1,5 +1,5 @@
 interface Props {
-  text: string | undefined;
+  text: any;
 }
 
 const HTMLRender: React.FC<Props> = ({ text }) => {
