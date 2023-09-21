@@ -15,7 +15,12 @@ model about {
 }
 
 model contact {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  content  String
+  image    String
+  position Int
+  title    String
+  type     String
 }
 
 model experiences {
