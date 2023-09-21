@@ -17,3 +17,12 @@ declare interface ExperiencesDataType {
     image: string;
     position: number;
 }
+
+declare interface ContactDataType {
+    title: string;
+    type: string;
+    content: string;
+    image: string;
+    position: number;
+    link?: string;
+}

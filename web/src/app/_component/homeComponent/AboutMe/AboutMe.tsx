@@ -20,7 +20,7 @@ const AboutMe = () => {
                         <span className={styles.Line2}></span>
                         <span className={styles.TextContent}>{item.content}</span>
                         <a
-                            href="/about"
+                            href="/contact"
                             className="inline-flex justify-center rounded-md bg-blue-600 px-3 py-3 text-sm text-white shadow-sm hover:bg-blue-500 sm:w-auto"
                             style={{ width: '13rem' }}
                             >

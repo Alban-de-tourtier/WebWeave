@@ -34,7 +34,7 @@ const ServiceProviding = () => {
                         <h1 className={styles.SubTitle}>{item.title}</h1>
                         <span className={styles.TextContent}>{item.content}</span>
                         <a
-                            href="/about"
+                            href="/experiences"
                             className="text-base font-medium text-blue-600 hover:text-indigo-500"
                             style={{ width: '6rem' }}
                             >
