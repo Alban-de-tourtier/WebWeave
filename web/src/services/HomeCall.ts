@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const getHomeDataType = async (type: string) => (
-    axios.get(`http://localhost:3001/api/home/${type}`)
+    axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/home/${type}`)
     .then(function (response) {
         return response.data;
     })

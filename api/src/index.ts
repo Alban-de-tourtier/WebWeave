@@ -8,7 +8,7 @@ import contactRouter from './routes/contact';
 const app = express();
 const cors = require('cors');
 const corsOptions = {
-  origin: `${process.env.WEBURL}:3000`,
+  origin: `${process.env.WEBURL}`,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
