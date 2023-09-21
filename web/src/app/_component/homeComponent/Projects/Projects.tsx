@@ -2,7 +2,6 @@ import styles from "./Projects.module.scss"
 import Image from "next/image"
 import Link from "next/link"
 import area from "@/images/home/Area.jpeg"
-// import portfolio from "../../../../images/home/Portfolio.jpeg"
 import trade from "@/images/home/Trade.webp"
 
 
@@ -14,7 +13,7 @@ const Projects = () => {
             <div className={styles.MainContainer}>
                 <div className={styles.Content}>
                     <Link href="/experiences">
-                        {/* <Image src={portfolio} alt="Portfolio" className={styles.Image}/> */}
+                        <Image src="/experiences/Portfolio.jpeg" width={450} height={450} alt="Portfolio" className={styles.Image}/>
                         <div className={styles.ContentTextContainer}>
                             <h4 className={styles.Title}>Portfolio</h4>
                             <h4 className={styles.ContentText}>Find out how I created this portfolio...</h4>
